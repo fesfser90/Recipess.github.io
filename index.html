@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Рецепты без JavaScript</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Список рецептов -->
+  <main>
+    <section class="recipes">
+      <div class="container">
+        <h2>Популярные рецепты</h2>
+        <div class="recipe-grid">
+          <div class="recipe-card">
+            <img src="Pasta.jpg" alt="Recipe">
+            <h3>Паста с томатным соусом</h3>
+            <p>Нежная паста с насыщенным томатным соусом.</p>
+            <!-- Открытие модального окна -->
+            <label for="modal1" class="btn">Посмотреть рецепт</label>
+          </div>
+          <div class="recipe-card">
+            <img src="kuritsa.jpg" alt="Recipe">
+            <h3>Курица Терияки</h3>
+            <p>Японское блюдо с нежным соусом терияки.</p>
+            <!-- Открытие модального окна -->
+            <label for="modal2" class="btn">Посмотреть рецепт</label>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Модальное окно для Пасты -->
+  <input type="checkbox" id="modal1" class="modal-toggle">
+  <div class="modal">
+    <div class="modal-content">
+      <label for="modal1" class="close">&times;</label>
+      <h3>Паста с томатным соусом</h3>
+      <ol>
+        <li>Сварите пасту в подсоленной воде до состояния аль денте.</li>
+        <li>На сковороде обжарьте чеснок в оливковом масле.</li>
+        <li>Добавьте томатный соус и специи, тушите 10 минут.</li>
+        <li>Смешайте пасту с соусом, посыпьте тертым сыром и свежей зеленью.</li>
+      </ol>
+      <!-- Кнопка закрытия -->
+      <label for="modal1" class="btn-close">Закрыть</label>
+    </div>
+  </div>
+
+  <!-- Модальное окно для Курицы Терияки -->
+  <input type="checkbox" id="modal2" class="modal-toggle">
+  <div class="modal">
+    <div class="modal-content">
+      <label for="modal2" class="close">&times;</label>
+      <h3>Курица Терияки</h3>
+      <ol>
+        <li>Замаринуйте курицу в соусе терияки на 30 минут.</li>
+        <li>Обжарьте курицу на сильном огне до готовности.</li>
+        <li>Подавайте с рисом и овощами.</li>
+      </ol>
+      <!-- Кнопка закрытия -->
+      <label for="modal2" class="btn-close">Закрыть</label>
+    </div>
+  </div>
+</body>
+</html>
+<link rel="stylesheet" href="styles.css">
